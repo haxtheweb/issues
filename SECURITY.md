@@ -7,4 +7,4 @@ If we get a security issue in a specific version, we are going to fix it in a ne
 
 ## Reporting a Vulnerability
 
-Security related issues should be filed in our general issue queue https://github.com/haxtheweb/issues/issues
+Security related issues should be filed in our general issue queue https://github.com/haxtheweb/issues/issues and selecting Advisories to draft a new security advisory. These vulnerabilities are taken seriously and private discussions will happen among the core team to identify the validity of the threat as well as issueing solutions and communicating through appropriate government channels.
