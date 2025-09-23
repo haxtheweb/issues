@@ -1,0 +1,9 @@
+# Issue data cache - don't commit large JSON files
+issues_data/
+*.issues.json
+all_issues*.json
+issue_cache*.json
+
+# Temporary files
+*.tmp
+.DS_Store
