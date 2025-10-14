@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discord Community
+    url: https://discord.gg/EKYJAjqGhf
+    about: Join our Discord for questions, discussions, and community support
+  - name: 📚 Documentation
+    url: https://haxtheweb.org/documentation
+    about: Check our comprehensive documentation for guides and tutorials
+  - name: 🎮 Try HAX Components
+    url: https://hax.cloud/magicscript.html
+    about: Explore and experiment with HAX components in the magic script playground

@@ -1,0 +1,68 @@
+---
+name: ✨ Feature request
+description: Suggest an idea for this project
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+
+        Before you continue, please take a moment to check that your feature has not been [already requested](https://github.com/haxtheweb/issues/issues) 🙌
+
+        **Note:** If you are seeking community support or want to discuss ideas, please start a discussion on [Discord](https://discord.gg/EKYJAjqGhf).
+
+  - type: dropdown
+    id: project
+    attributes:
+      label: Which HAXTheWeb project does this relate to?
+      description: Select the project that this feature would affect
+      options:
+        - webcomponents
+        - create
+        - haxcms-php
+        - haxcms-nodejs
+        - HAX editor
+        - Documentation
+        - Other (please specify in description)
+    validations:
+      required: true
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: Feature Overview
+      description: A clear and concise description of what the feature request is.
+      placeholder: I would like HAXTheWeb to be able to do "X".
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? What use case does it address?
+      placeholder: I'm trying to do "X" but currently there's no way to accomplish this because...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your preferred solution and how it would work.
+      placeholder: A new feature that allows users to...
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Detail any potential alternative solutions/workarounds you've used or considered.
+      placeholder: I have tried/considered doing "Y" but it doesn't work well because...
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the feature request here.
+      placeholder: Feel free to add mockups, screenshots, examples, or any other relevant information.

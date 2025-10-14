@@ -1,0 +1,81 @@
+---
+name: 🐛 Bug report
+description: Create a report to help us improve
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+
+        Before you continue, please take a moment to check that your bug has not been [already reported](https://github.com/haxtheweb/issues/issues) 🙌
+
+        **Note:** If you are seeking community support, please start a discussion on [Discord](https://discord.gg/EKYJAjqGhf).
+
+  - type: dropdown
+    id: project
+    attributes:
+      label: Which HAXTheWeb project does this relate to?
+      description: Select the project that this bug affects
+      options:
+        - webcomponents
+        - create
+        - haxcms-php
+        - haxcms-nodejs
+        - HAX editor
+        - Documentation
+        - Other (please specify in description)
+    validations:
+      required: true
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: Bug Overview
+      description: A clear and concise overview of the bug.
+      placeholder: When I do "X", "Y" happens instead of "Z".
+    validations:
+      required: true
+
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: When I do "X", I expect "Z" to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce the Bug
+      description: Detail the series of steps required to reproduce the bug.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Please provide details about your environment.
+      value: |
+        - Browser: [e.g. Chrome 91, Firefox 89, Safari 14]
+        - OS: [e.g. macOS 12, Windows 10, Ubuntu 20.04]
+        - HAX Version: [e.g. latest, v1.2.3, commit hash]
+        - Node.js Version (if applicable): [e.g. v16.14.0]
+        - PHP Version (if applicable): [e.g. v8.1]
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here.
+      placeholder: Feel free to add screenshots, error messages, or any other relevant information.
