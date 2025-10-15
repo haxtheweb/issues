@@ -3,9 +3,15 @@ contact_links:
   - name: 💬 Discord Community
     url: https://discord.gg/EKYJAjqGhf
     about: Join our Discord for questions, discussions, and community support
+  - name: 👔 LinkedIn
+    url: http://linkedin.com/company/haxtheweb
+    about: Connect with us on LinkedIn for professional updates and networking
+  - name: 🐦 Follow on X
+    url: https://x.com/haxtheweb
+    about: Stay updated with the latest news and updates from HAXTheWeb
   - name: 📚 Documentation
     url: https://haxtheweb.org/documentation
     about: Check our comprehensive documentation for guides and tutorials
-  - name: 🎮 Try HAX Components
+  - name: 🎮 Try HAX on hax.cloud
     url: https://hax.cloud/magicscript.html
-    about: Explore and experiment with HAX components in the magic script playground
+    about: Explore and experiment with HAXcms, components and more with the magic script

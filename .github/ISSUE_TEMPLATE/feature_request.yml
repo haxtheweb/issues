@@ -21,13 +21,14 @@ body:
       label: Project
       description: Which project would this feature affect?
       options:
-        - webcomponents
-        - create
-        - haxcms-php
-        - haxcms-nodejs
-        - HAX editor
+        - webcomponents (UX / frontend)
+        - create (hax CLI)
         - Documentation
-        - Other
+        - HAX editing experience
+        - HAXCMS site builder
+        - haxcms-php (backend)
+        - haxcms-nodejs (backend)
+        - Other (integrations, etc)
     validations:
       required: true
 
@@ -47,4 +48,4 @@ body:
       description: What problem would this solve or what would it help you accomplish?
       placeholder: This would help me/users to...
     validations:
-      required: true
+      required: false
