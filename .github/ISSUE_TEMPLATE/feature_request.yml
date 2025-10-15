@@ -6,17 +6,20 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this feature request!
+        Thanks for suggesting a new feature! ✨
 
-        Before you continue, please take a moment to check that your feature has not been [already requested](https://github.com/haxtheweb/issues/issues) 🙌
+        **Quick check:** Has this feature been [already requested](https://github.com/haxtheweb/issues/issues)?
 
-        **Note:** If you are seeking community support or want to discuss ideas, please start a discussion on [Discord](https://discord.gg/EKYJAjqGhf).
+        **Need help or want to discuss ideas?** Connect with us:
+        - [Discord](https://discord.gg/EKYJAjqGhf) for community support
+        - [LinkedIn](http://linkedin.com/company/haxtheweb) for updates
+        - [X](https://x.com/haxtheweb) for updates
 
   - type: dropdown
     id: project
     attributes:
-      label: Which HAXTheWeb project does this relate to?
-      description: Select the project that this feature would affect
+      label: Project
+      description: Which project would this feature affect?
       options:
         - webcomponents
         - create
@@ -24,45 +27,24 @@ body:
         - haxcms-nodejs
         - HAX editor
         - Documentation
-        - Other (please specify in description)
+        - Other
     validations:
       required: true
 
   - type: textarea
-    id: overview
+    id: description
     attributes:
-      label: Feature Overview
-      description: A clear and concise description of what the feature request is.
-      placeholder: I would like HAXTheWeb to be able to do "X".
+      label: What would you like to see?
+      description: Describe the feature you'd like
+      placeholder: I would like HAXTheWeb to be able to...
     validations:
       required: true
 
   - type: textarea
-    id: problem
+    id: why
     attributes:
-      label: Problem Statement
-      description: What problem does this feature solve? What use case does it address?
-      placeholder: I'm trying to do "X" but currently there's no way to accomplish this because...
+      label: Why would this be useful?
+      description: What problem would this solve or what would it help you accomplish?
+      placeholder: This would help me/users to...
     validations:
       required: true
-
-  - type: textarea
-    id: solution
-    attributes:
-      label: Proposed Solution
-      description: Describe your preferred solution and how it would work.
-      placeholder: A new feature that allows users to...
-
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: Alternatives Considered
-      description: Detail any potential alternative solutions/workarounds you've used or considered.
-      placeholder: I have tried/considered doing "Y" but it doesn't work well because...
-
-  - type: textarea
-    id: context
-    attributes:
-      label: Additional Context
-      description: Add any other context about the feature request here.
-      placeholder: Feel free to add mockups, screenshots, examples, or any other relevant information.

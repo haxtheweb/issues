@@ -6,17 +6,20 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to report this bug! 🐛
 
-        Before you continue, please take a moment to check that your bug has not been [already reported](https://github.com/haxtheweb/issues/issues) 🙌
+        **Quick check:** Has this bug been [already reported](https://github.com/haxtheweb/issues/issues)?
 
-        **Note:** If you are seeking community support, please start a discussion on [Discord](https://discord.gg/EKYJAjqGhf).
+        **Need help or have questions?** Connect with us:
+        - [Discord](https://discord.gg/EKYJAjqGhf) for community support
+        - [LinkedIn](http://linkedin.com/company/haxtheweb) for updates
+        - [X](https://x.com/haxtheweb) for updates
 
   - type: dropdown
     id: project
     attributes:
-      label: Which HAXTheWeb project does this relate to?
-      description: Select the project that this bug affects
+      label: Project
+      description: Which project does this bug affect?
       options:
         - webcomponents
         - create
@@ -24,58 +27,36 @@ body:
         - haxcms-nodejs
         - HAX editor
         - Documentation
-        - Other (please specify in description)
+        - Other
     validations:
       required: true
 
   - type: textarea
-    id: overview
+    id: description
     attributes:
-      label: Bug Overview
-      description: A clear and concise overview of the bug.
-      placeholder: When I do "X", "Y" happens instead of "Z".
-    validations:
-      required: true
-
-  - type: textarea
-    id: behavior
-    attributes:
-      label: Expected Behavior
-      description: A clear and concise description of what you expected to happen.
-      placeholder: When I do "X", I expect "Z" to happen.
+      label: What happened?
+      description: Describe the bug in a few sentences
+      placeholder: When I do X, Y happens instead of Z
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: Steps to Reproduce the Bug
-      description: Detail the series of steps required to reproduce the bug.
+      label: How to reproduce
+      description: Simple steps to reproduce the issue (optional but helpful)
       placeholder: |
-        1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
-        4. See error
+        1. Go to...
+        2. Click...
+        3. See error
     validations:
-      required: true
-
-  - type: textarea
-    id: environment
-    attributes:
-      label: Environment Details
-      description: Please provide details about your environment.
-      value: |
-        - Browser: [e.g. Chrome 91, Firefox 89, Safari 14]
-        - OS: [e.g. macOS 12, Windows 10, Ubuntu 20.04]
-        - HAX Version: [e.g. latest, v1.2.3, commit hash]
-        - Node.js Version (if applicable): [e.g. v16.14.0]
-        - PHP Version (if applicable): [e.g. v8.1]
-    validations:
-      required: true
+      required: false
 
   - type: textarea
     id: context
     attributes:
-      label: Additional Context
-      description: Add any other context about the problem here.
-      placeholder: Feel free to add screenshots, error messages, or any other relevant information.
+      label: Additional details
+      description: Browser, OS, screenshots, error messages, etc. (optional)
+      placeholder: Any additional context that might help
+    validations:
+      required: false
