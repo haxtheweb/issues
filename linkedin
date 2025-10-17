@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Quick LinkedIn posting script for HAX productivity updates
+# Usage: ./linkedin
+
+cd "$(dirname "$0")"
+
+echo "🚀 HAX → LinkedIn Quick Post"
+echo "=============================="
+
+# Update issue data first
+echo "📊 Fetching latest issue data..."
+if ./fetch_issues.sh; then
+    echo "✅ Data updated"
+    echo ""
+    
+    # Run the LinkedIn poster
+    node post-to-linkedin.js
+else
+    echo "❌ Failed to fetch issue data"
+    exit 1
+fi

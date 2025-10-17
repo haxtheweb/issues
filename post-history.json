@@ -1,0 +1,148 @@
+[
+  {
+    "date": "2025-10-17",
+    "stats": {
+      "thisWeek": {
+        "created": 20,
+        "resolved": 15,
+        "completionRate": "75",
+        "authors": {
+          "btopro": 18,
+          "BenFictional": 1,
+          "winstonwumbo": 1
+        },
+        "categories": {
+          "accessibility": 4,
+          "performance": 0,
+          "ux": 3,
+          "dx": 4,
+          "bugfix": 8,
+          "enhancement": 5,
+          "cleanup": 2
+        }
+      },
+      "overall": {
+        "total": 2470,
+        "resolved": 2254,
+        "active": 216,
+        "resolutionRate": "91.3"
+      }
+    },
+    "linkedinPost": "🚀 This Week's Open Source Momentum\n\n📈 Issue Processing:\n• 20 new issues created\n• 15 issues resolved\n• 75% completion rate\n\n🎯 Key Focus Areas:\n🐛 Bug Fixes (8)\n✨ Enhancements (5)\n♿ Accessibility (4)\n🛠️ Developer Experience (4)\n\n📊 Project Health:\n• 2,470 total issues tracked\n• 91.3% overall resolution rate\n• 216 active issues\n\nBuilding sustainable #WebComponents for the open web! 💪\n\n#OpenSource #HAXTheWeb #WebDevelopment #ProductivityUpdate #Developer",
+    "twitterPost": "🚀 This Week in Open Source\n\n20 new → 15 resolved (75%)\n\n2,470 total | 91.3% resolution rate\n\nBuilding sustainable #WebComponents! \n\n#OpenSource #HAXTheWeb",
+    "posted": "manual",
+    "method": "manual"
+  },
+  {
+    "date": "2025-10-17",
+    "stats": {
+      "thisWeek": {
+        "created": 20,
+        "resolved": 15,
+        "completionRate": "75",
+        "authors": {
+          "btopro": 18,
+          "BenFictional": 1,
+          "winstonwumbo": 1
+        },
+        "categories": {
+          "accessibility": 4,
+          "performance": 0,
+          "ux": 3,
+          "dx": 4,
+          "bugfix": 8,
+          "enhancement": 5,
+          "cleanup": 2
+        }
+      },
+      "overall": {
+        "total": 2470,
+        "resolved": 2254,
+        "active": 216,
+        "resolutionRate": "91.3"
+      }
+    },
+    "linkedinPost": "🚀 This Week's Open Source Momentum\n\n📈 Issue Processing:\n• 20 new issues created\n• 15 issues resolved\n• 75% completion rate\n\n🎯 Key Focus Areas:\n🐛 Bug Fixes (8)\n✨ Enhancements (5)\n♿ Accessibility (4)\n🛠️ Developer Experience (4)\n\n📊 Project Health:\n• 2,470 total issues tracked\n• 91.3% overall resolution rate\n• 216 active issues\n\nBuilding sustainable #WebComponents for the open web! 💪\n\n#OpenSource #HAXTheWeb #WebDevelopment #ProductivityUpdate #Developer",
+    "twitterPost": "🚀 This Week in Open Source\n\n20 new → 15 resolved (75%)\n\n2,470 total | 91.3% resolution rate\n\nBuilding sustainable #WebComponents! \n\n#OpenSource #HAXTheWeb",
+    "posted": "manual",
+    "method": "manual"
+  },
+  {
+    "date": "2025-10-17",
+    "stats": {
+      "thisWeek": {
+        "created": 20,
+        "resolved": 15,
+        "completionRate": "75",
+        "authors": {
+          "btopro": 18,
+          "BenFictional": 1,
+          "winstonwumbo": 1
+        },
+        "categories": {
+          "accessibility": 4,
+          "performance": 0,
+          "ux": 3,
+          "dx": 4,
+          "bugfix": 8,
+          "enhancement": 5,
+          "cleanup": 2
+        }
+      },
+      "overall": {
+        "total": 2470,
+        "resolved": 2254,
+        "active": 216,
+        "resolutionRate": "91.3"
+      }
+    },
+    "linkedinPost": "🚀 This Week's Open Source Momentum\n\n📈 Issue Processing:\n• 20 new issues created\n• 15 issues resolved\n• 75% completion rate\n\n🎯 Key Focus Areas:\n🐛 Bug Fixes (8)\n✨ Enhancements (5)\n♿ Accessibility (4)\n🛠️ Developer Experience (4)\n\n📊 Project Health:\n• 2,470 total issues tracked\n• 91.3% overall resolution rate\n• 216 active issues\n\nBuilding sustainable #WebComponents for the open web! 💪\n\n#OpenSource #HAXTheWeb #WebDevelopment #ProductivityUpdate #Developer",
+    "twitterPost": "🚀 This Week in Open Source\n\n20 new → 15 resolved (75%)\n\n2,470 total | 91.3% resolution rate\n\nBuilding sustainable #WebComponents! \n\n#OpenSource #HAXTheWeb",
+    "posted": true,
+    "method": "api"
+  },
+  {
+    "date": "2025-10-17",
+    "type": "issues-summary",
+    "stats": {
+      "thisWeek": {
+        "created": 20,
+        "resolved": 15,
+        "completionRate": "75",
+        "authors": {
+          "btopro": 18,
+          "BenFictional": 1,
+          "winstonwumbo": 1
+        },
+        "categories": {
+          "accessibility": 4,
+          "performance": 0,
+          "ux": 3,
+          "dx": 4,
+          "bugfix": 8,
+          "enhancement": 5,
+          "cleanup": 2
+        }
+      },
+      "overall": {
+        "total": 2470,
+        "resolved": 2254,
+        "active": 216,
+        "resolutionRate": "91.3"
+      }
+    },
+    "linkedinPost": "🚀 This Week's Open Source Momentum\n\n📈 Issue Processing:\n• 20 new issues created\n• 15 issues resolved\n• 75% completion rate\n\n🎯 Key Focus Areas:\n🐛 Bug Fixes (8)\n✨ Enhancements (5)\n♠ Accessibility (4)\n🛠️ Developer Experience (4)\n\n📊 Project Health:\n• 2,470 total issues tracked\n• 91.3% overall resolution rate\n• 216 active issues\n\nBuilding sustainable #WebComponents for the open web! 💪\n\n#OpenSource #HAXTheWeb #WebDevelopment #ProductivityUpdate #Developer",
+    "twitterPost": "🚀 This Week in Open Source\n\n20 new → 15 resolved (75%)\n\n2,470 total | 91.3% resolution rate\n\nBuilding sustainable #WebComponents! \n\n#OpenSource #HAXTheWeb",
+    "posted": true,
+    "method": "api"
+  },
+  {
+    "date": "2025-10-17",
+    "type": "custom",
+    "stats": null,
+    "linkedinPost": "🎉 Shoutout to Winston for revolutionizing community engagement in HAX!\n\nHis brilliant work on the `hax party` command is transforming how developers connect with our ecosystem. What started as a simple CLI feature has become a powerful community onboarding tool.\n\n🚀 **Winston's Contributions:**\n• Implemented GitHub CLI integration for seamless repo management\n• Added comprehensive documentation for new developers\n• Fixed critical git author handling issues\n• Created one-command setup for multiple HAX repositories\n\nThe `hax party` command now opens direct pathways to:\n📚 Documentation (haxtheweb.org)\n🎮 Interactive playground (hax.cloud) \n💬 Discord community\n🎯 GitHub issues & contributions\n🎓 HAX The Club (PSU student org)\n\n**This is community-driven development at its finest.** Winston saw the friction points in developer onboarding and built elegant solutions that make contributing to HAX accessible and fun.\n\nWhen students lead innovation, amazing things happen. 🌟\n\nReady to join the party? \n👉 `npm install @haxtheweb/create -g && hax party github`\n\nThank you Winston for making HAX more welcoming for everyone! 🙏\n\n#OpenSource #CommunityFirst #StudentDevelopers #HAX #WebComponents #DeveloperExperience #PSU",
+    "twitterPost": "🎉 Shoutout to Winston for revolutionizing community engagement in HAX!",
+    "posted": true,
+    "method": "api"
+  }
+]

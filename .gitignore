@@ -7,3 +7,7 @@ issue_cache*.json
 # Temporary files
 *.tmp
 .DS_Store
+
+# LinkedIn credentials - NEVER commit these!
+linkedin-config.json
+*.config.json
