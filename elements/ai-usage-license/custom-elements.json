@@ -8,16 +8,6 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "A list of AIUL licenses and their associated data.\nBased on the AIUL API: https://dmd-program.github.io/aiul/api/",
-          "name": "aiulList"
-        },
-        {
-          "kind": "class",
-          "description": "A list of AIUL media modifiers and their associated data.",
-          "name": "aiulModifiers"
-        },
-        {
-          "kind": "class",
           "description": "`ai-usage-license`\n`A simple way of applying a semantically accurate AI usage license (AIUL) to work.`",
           "name": "AiUsageLicense",
           "cssProperties": [
@@ -51,7 +41,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "Full license name, calculated from the license property.",
+              "description": "Full license name, resolved from the AIUL API.",
               "attribute": "license-name"
             },
             {
@@ -60,7 +50,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "License badge image URL.",
+              "description": "License badge image URL, resolved from the AIUL API.",
               "attribute": "license-image"
             },
             {
@@ -69,7 +59,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "License details link.",
+              "description": "License details link, resolved from the AIUL API.",
               "attribute": "license-link"
             },
             {
@@ -113,7 +103,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "Full license name, calculated from the license property.",
+              "description": "Full license name, resolved from the AIUL API.",
               "fieldName": "licenseName"
             },
             {
@@ -121,7 +111,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "License badge image URL.",
+              "description": "License badge image URL, resolved from the AIUL API.",
               "fieldName": "licenseImage"
             },
             {
@@ -129,7 +119,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "License details link.",
+              "description": "License details link, resolved from the AIUL API.",
               "fieldName": "licenseLink"
             },
             {
@@ -160,17 +150,17 @@
       "exports": [
         {
           "kind": "js",
-          "name": "aiulList",
+          "name": "fetchAiulData",
           "declaration": {
-            "name": "aiulList",
+            "name": "fetchAiulData",
             "module": "ai-usage-license.js"
           }
         },
         {
           "kind": "js",
-          "name": "aiulModifiers",
+          "name": "setAiulDataCache",
           "declaration": {
-            "name": "aiulModifiers",
+            "name": "setAiulDataCache",
             "module": "ai-usage-license.js"
           }
         },

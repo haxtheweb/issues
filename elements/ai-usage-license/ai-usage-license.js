@@ -1,134 +1,44 @@
-/**
- * A list of AIUL licenses and their associated data.
- * Based on the AIUL API: https://dmd-program.github.io/aiul/api/
- */
-export class aiulList {
-  constructor(mode = "full") {
-    // AIUL license data based on https://dmd-program.github.io/aiul/api/licenses.json
-    let list = {
-      NA: {
-        name: "Not Allowed",
-        link: "https://dmd-program.github.io/aiul/licenses/na/1.0.0/",
-        image:
-          "https://cdn.jsdelivr.net/gh/dmd-program/aiul@main/assets/images/licenses/aiul-na.png",
-        description:
-          "No AI tools allowed. All work must be entirely student-generated.",
-      },
-      WA: {
-        name: "With Approval",
-        link: "https://dmd-program.github.io/aiul/licenses/wa/1.0.0/",
-        image:
-          "https://cdn.jsdelivr.net/gh/dmd-program/aiul@main/assets/images/licenses/aiul-wa.png",
-        description:
-          "AI tools may be used only with prior instructor approval. Specific use cases must be agreed upon before the assignment is submitted.",
-      },
-      CD: {
-        name: "Conceptual Development",
-        link: "https://dmd-program.github.io/aiul/licenses/cd/1.0.0/",
-        image:
-          "https://cdn.jsdelivr.net/gh/dmd-program/aiul@main/assets/images/licenses/aiul-cd.png",
-        description:
-          "AI tools may be used for research and ideation, but the final work must be entirely student-generated.",
-      },
-      TC: {
-        name: "Transformative Collaboration",
-        link: "https://dmd-program.github.io/aiul/licenses/tc/1.0.0/",
-        image:
-          "https://cdn.jsdelivr.net/gh/dmd-program/aiul@main/assets/images/licenses/aiul-tc.png",
-        description:
-          "AI tools may be used as a collaborative partner, but students must significantly transform or build upon AI-generated content.",
-      },
-      DP: {
-        name: "Directed Production",
-        link: "https://dmd-program.github.io/aiul/licenses/dp/1.0.0/",
-        image:
-          "https://cdn.jsdelivr.net/gh/dmd-program/aiul@main/assets/images/licenses/aiul-dp.png",
-        description:
-          "AI tools may be used under the student's direction as a creative production tool, with student responsible for all creative decisions.",
-      },
-      IU: {
-        name: "Integrated Usage",
-        link: "https://dmd-program.github.io/aiul/licenses/iu/1.0.0/",
-        image:
-          "https://cdn.jsdelivr.net/gh/dmd-program/aiul@main/assets/images/licenses/aiul-iu.png",
-        description:
-          "Full, intentional, and skillful use of AI tools is permitted and encouraged as part of the assignment.",
-      },
-    }
-    // support mutating the array into a select list
-    if (mode == "select") {
-      var select = {}
-      for (var i in list) {
-        select[i] = list[i].name
-      }
-      return select
-    }
-    return list
-  }
-}
-
-/**
- * A list of AIUL media modifiers and their associated data.
- */
-export class aiulModifiers {
-  constructor(mode = "full") {
-    // AIUL modifier data based on https://dmd-program.github.io/aiul/api/modifiers.json
-    let list = {
-      "3D": {
-        name: "3D Design",
-        fullName: "3-Dimensional Design",
-        link: "https://dmd-program.github.io/aiul/modifiers/3d/1.0.0/",
-      },
-      AU: {
-        name: "Audio",
-        fullName: "Audio",
-        link: "https://dmd-program.github.io/aiul/modifiers/audio/1.0.0/",
-      },
-      CO: {
-        name: "Code",
-        fullName: "Code",
-        link: "https://dmd-program.github.io/aiul/modifiers/code/1.0.0/",
-      },
-      IM: {
-        name: "Image",
-        fullName: "Image",
-        link: "https://dmd-program.github.io/aiul/modifiers/image/1.0.0/",
-      },
-      MX: {
-        name: "Mixed Media",
-        fullName: "Mixed Media",
-        link: "https://dmd-program.github.io/aiul/modifiers/mixed-media/1.0.0/",
-      },
-      TR: {
-        name: "Traditional Media",
-        fullName: "Traditional Media",
-        link: "https://dmd-program.github.io/aiul/modifiers/traditional-media/1.0.0/",
-      },
-      VD: {
-        name: "Video",
-        fullName: "Video",
-        link: "https://dmd-program.github.io/aiul/modifiers/video/1.0.0/",
-      },
-      WR: {
-        name: "Writing",
-        fullName: "Writing",
-        link: "https://dmd-program.github.io/aiul/modifiers/writing/1.0.0/",
-      },
-    }
-    if (mode == "select") {
-      var select = { "": "No modifier" }
-      for (var i in list) {
-        select[i] = list[i].name
-      }
-      return select
-    }
-    return list
-  }
-}
-
 import { LitElement, html, css } from "lit"
 import { SchemaBehaviors } from "@haxtheweb/schema-behaviors/schema-behaviors.js"
 import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js"
+
+const AIUL_API = "https://dmd-program.github.io/aiul/api/v1.json"
+
+// Module-level API data cache — populated on first fetch
+let _aiulData = null
+let _aiulFetchPromise = null
+
+/**
+ * Fetch and cache the AIUL API data (v1).
+ * Only one network request is made regardless of how many elements are on the page.
+ * @returns {Promise<Object>} Resolves with the full v1 API payload.
+ */
+export function fetchAiulData() {
+  if (!_aiulFetchPromise) {
+    _aiulFetchPromise = globalThis
+      .fetch(AIUL_API)
+      .then((r) => r.json())
+      .then((data) => {
+        _aiulData = data
+        return data
+      })
+  }
+  return _aiulFetchPromise
+}
+
+/**
+ * Seed the module-level cache with pre-loaded data.
+ * Intended for use in tests so network requests can be avoided.
+ * @param {Object} data - An object with the same shape as the v1 API response.
+ */
+export function setAiulDataCache(data) {
+  _aiulData = data
+  _aiulFetchPromise = Promise.resolve(data)
+}
+
+// Kick off the fetch as soon as the module loads so data is available quickly.
+fetchAiulData()
+
 /**
  * `ai-usage-license`
  * `A simple way of applying a semantically accurate AI usage license (AIUL) to work.`
@@ -286,8 +196,6 @@ class AiUsageLicense extends SchemaBehaviors(DDDSuper(LitElement)) {
 
   constructor() {
     super()
-    this.aiulList = new aiulList()
-    this.aiulModifiers = new aiulModifiers()
     this.license = null
     this.modifier = null
     this.licenseName = null
@@ -306,6 +214,19 @@ class AiUsageLicense extends SchemaBehaviors(DDDSuper(LitElement)) {
   }
 
   static get haxProperties() {
+    // Build select options from the API cache when available.
+    // By the time an author opens the HAX settings panel the fetch will have
+    // resolved, so the options will be populated correctly.
+    const licenseOptions = {}
+    const modifierOptions = { "": "No modifier" }
+    if (_aiulData) {
+      for (const lic of _aiulData.licenses) {
+        licenseOptions[lic.code] = lic.fullName
+      }
+      for (const mod of _aiulData.modifiers) {
+        modifierOptions[mod.code] = mod.title
+      }
+    }
     return {
       canScale: false,
       canEditSource: true,
@@ -336,7 +257,7 @@ class AiUsageLicense extends SchemaBehaviors(DDDSuper(LitElement)) {
             description:
               "The AI usage license level for this work. See https://dmd-program.github.io/aiul/ for details.",
             inputMethod: "select",
-            options: new aiulList("select"),
+            options: licenseOptions,
             icon: "hardware:memory",
           },
           {
@@ -345,7 +266,7 @@ class AiUsageLicense extends SchemaBehaviors(DDDSuper(LitElement)) {
             description:
               "Optional media domain modifier. Specifies the type of media this license applies to.",
             inputMethod: "select",
-            options: new aiulModifiers("select"),
+            options: modifierOptions,
             icon: "image:photo",
           },
         ],
@@ -365,37 +286,44 @@ class AiUsageLicense extends SchemaBehaviors(DDDSuper(LitElement)) {
   }
 
   /**
-   * Update license name, image, link, and description when license or modifier changes.
+   * Fetch license and modifier data from the AIUL API then update reactive
+   * properties so the element re-renders with the correct badge.
    */
   _licenseUpdated(license, modifier) {
-    if (!license || typeof this.aiulList[license] === "undefined") {
-      return
-    }
-    const licenseData = this.aiulList[license]
-    const modifierData =
-      modifier && this.aiulModifiers[modifier]
-        ? this.aiulModifiers[modifier]
+    if (!license) return
+    fetchAiulData().then((data) => {
+      const licenseEntry = data.licenses.find((l) => l.code === license)
+      if (!licenseEntry) return
+
+      const modifierEntry = modifier
+        ? data.modifiers.find((m) => m.code === modifier)
         : null
 
-    // Build the AIUL tag string (e.g. "AIUL-CD" or "AIUL-CD-IM")
-    this.licenseTag = modifierData
-      ? `AIUL-${license}-${modifier}`
-      : `AIUL-${license}`
+      // Build the full AIUL tag string (e.g. "AIUL-CD" or "AIUL-CD-IM")
+      this.licenseTag = modifierEntry
+        ? `AIUL-${license}-${modifier}`
+        : `AIUL-${license}`
 
-    this.licenseName = modifierData
-      ? `${licenseData.name} / ${modifierData.name}`
-      : licenseData.name
+      this.licenseName = modifierEntry
+        ? `${licenseEntry.fullName} / ${modifierEntry.title}`
+        : licenseEntry.fullName
 
-    this.licenseDescription = licenseData.description
+      this.licenseLink = modifierEntry
+        ? `https://dmd-program.github.io/aiul/combinations/${license.toLowerCase()}-${modifier.toLowerCase()}.html`
+        : licenseEntry.url
 
-    this.licenseLink = modifierData
-      ? `https://dmd-program.github.io/aiul/combinations/${license.toLowerCase()}-${modifier.toLowerCase()}.html`
-      : licenseData.link
-
-    // Combination images use lowercase codes, e.g. aiul-cd-im.png
-    this.licenseImage = modifierData
-      ? `https://cdn.jsdelivr.net/gh/dmd-program/aiul@main/assets/images/licenses/aiul-${license.toLowerCase()}-${modifier.toLowerCase()}.png`
-      : licenseData.image
+      if (modifierEntry) {
+        // Look up the pre-generated combination image from the API
+        const combo = data.combinations
+          ? data.combinations.find(
+              (c) => c.license.code === license && c.modifier.code === modifier,
+            )
+          : null
+        this.licenseImage = combo ? combo.image : licenseEntry.image
+      } else {
+        this.licenseImage = licenseEntry.image
+      }
+    })
   }
 }
 
