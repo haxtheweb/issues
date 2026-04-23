@@ -149,6 +149,16 @@ HAX has since moved to its own build system (gulp + custom tooling). The Polymer
 
 ---
 
+## Posting Cross-Reference Comments
+
+A script [`post_cross_references.sh`](post_cross_references.sh) is included that will post all 49 cross-reference comments across the 13 clusters automatically. Run it with a GitHub PAT that has `issues:write` scope:
+
+```bash
+GH_TOKEN=<your_pat> ./post_cross_references.sh
+```
+
+---
+
 ## Summary Table
 
 | Category | Issues | Suggested Action |
