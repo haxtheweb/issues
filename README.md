@@ -8,6 +8,10 @@
 
 The unified issue queue for the entire HAXTheWeb ecosystem. Instead of filing bugs and feature requests across dozens of separate repositories, everything lands here in one place — making it easy to search, triage, and track work across HAX, HAXcms, and related projects.
 
+## Onboarding
+
+New to the HAX ecosystem? **[Start here](./CONTRIBUTING.md)** — the single onboarding guide in this repo covers prerequisites, cloning the core repos, installing, and running each project locally.
+
 ## Why a unified queue?
 
 HAXTheWeb spans many repositories (`webcomponents`, `create`, `haxcms-php`, `haxcms-nodejs`, `desktop`, `open-apis`, `docs`, and more). A single issue queue means:
