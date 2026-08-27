@@ -173,4 +173,4 @@ We work primarily with pull requests from forks.
 
 ## Security
 
-If you discover what you deem to be a critical security issue, reach out on our Discord channel privately to discuss whether it should be resolved in the open or whether disclosure should happen after a solution has been crafted. Do not open a public issue for security vulnerabilities.
+If you discover what you deem to be a critical security issue please see our [SECURITY](SECURITY.md) guide for this type of contribution.
