@@ -1,7 +1,7 @@
 [![Community Support](https://badgen.net/badge/support/community/cyan?icon=awesome)](/SUPPORT.md)
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](/CODE_OF_CONDUCT.md)
-[![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/EKYJAjqGhf)
+[![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/aCGxmRHEJP)
 [![#HAXTheWeb](https://img.shields.io/badge/-HAXTheWeb-999999FF?style=flat&logo=data:image/svg%2bxml;base64,PHN2ZyBpZD0iZmVhMTExZTAtMjEwZC00Y2QwLWJhMWQtZGZmOTQyODc0Njg1IiBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE4NC40IDEzNS45NyI+PGRlZnM+PHN0eWxlPi5lMWJjMjAyNS0xODAwLTRkYzItODc4NS1jNDZlZDEwM2Y0OTJ7ZmlsbDojMjMxZjIwO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iZTFiYzIwMjUtMTgwMC00ZGMyLTg3ODUtYzQ2ZWQxMDNmNDkyIiBkPSJNNzguMDcsODMuNDVWNTVIODYuMnY4LjEzaDE2LjI2djQuMDdoNC4wN1Y4My40NUg5OC40VjY3LjE5SDg2LjJWODMuNDVaIi8+PHBvbHlnb24gcG9pbnRzPSIxNTMuMTMgNjMuNyAxNTMuMTMgNTEuMzkgMTQwLjU0IDUxLjM5IDE0MC41NCAzOS4wOSAxMjcuOTUgMzkuMDkgMTI3Ljk1IDI2Ljc5IDEwMi43OCAyNi43OSAxMDIuNzggMzkuMDkgMTE1LjM2IDM5LjA5IDExNS4zNiA1MS4zOSAxMjcuOTUgNTEuMzkgMTI3Ljk1IDYzLjcgMTQwLjU0IDYzLjcgMTQwLjU0IDc2IDEyNy4zNiA3NiAxMjcuMzYgODguMyAxMTQuNzggODguMyAxMTQuNzggMTAwLjYxIDEwMi4xOSAxMDAuNjEgMTAyLjE5IDExMi45MSAxMjcuMzYgMTEyLjkxIDEyNy4zNiAxMDAuNjEgMTM5Ljk1IDEwMC42MSAxMzkuOTUgODguMyAxNTIuNTQgODguMyAxNTIuNTQgNzYgMTY1LjcyIDc2IDE2NS43MiA2My43IDE1My4xMyA2My43Ii8+PHBvbHlnb24gcG9pbnRzPSIzMy4xMyA2My43IDMzLjEzIDUxLjM5IDQ1LjcyIDUxLjM5IDQ1LjcyIDM5LjA5IDU4LjMxIDM5LjA5IDU4LjMxIDI2Ljc5IDgzLjQ4IDI2Ljc5IDgzLjQ4IDM5LjA5IDcwLjg5IDM5LjA5IDcwLjg5IDUxLjM5IDU4LjMxIDUxLjM5IDU4LjMxIDYzLjcgNDUuNzIgNjMuNyA0NS43MiA3NiA1OC44OSA3NiA1OC44OSA4OC4zIDcxLjQ4IDg4LjMgNzEuNDggMTAwLjYxIDg0LjA3IDEwMC42MSA4NC4wNyAxMTIuOTEgNTguODkgMTEyLjkxIDU4Ljg5IDEwMC42MSA0Ni4zMSAxMDAuNjEgNDYuMzEgODguMyAzMy43MiA4OC4zIDMzLjcyIDc2IDIwLjU0IDc2IDIwLjU0IDYzLjcgMzMuMTMgNjMuNyIvPjwvc3ZnPg==)](https://haxtheweb.org/)
 
 # HAXTheWeb Issues
@@ -11,6 +11,12 @@ The unified issue queue for the entire HAXTheWeb ecosystem. Instead of filing bu
 ## Onboarding
 
 New to the HAX ecosystem? **[Start here](./CONTRIBUTING.md)** — the single onboarding guide in this repo covers prerequisites, cloning the core repos, installing, and running each project locally.
+
+## Who this queue serves
+
+- **All HAX contributors** — bugs, features, and plans for every ecosystem repo land here; the project selector routes them.
+- **Maintainers** — the single triage view, with `Plan Created` plans as the public decision record (see GOVERNANCE.md).
+- **Adopters and campus IT** — a public record of what's broken, what's planned (ROADMAP.md), and what's been fixed.
 
 ## Why a unified queue?
 
@@ -41,7 +47,7 @@ Before opening a new issue:
 
 1. **Search existing issues** — someone may have already reported it
 2. **Check the [documentation](https://haxtheweb.org/documentation)**
-3. **Ask on [Discord](https://discord.gg/EKYJAjqGhf)** if you're unsure whether it's a bug
+3. **Ask on [Discord](https://discord.gg/aCGxmRHEJP)** if you're unsure whether it's a bug
 
 Then pick a template:
 
@@ -56,7 +62,7 @@ For **security vulnerabilities**, do not open a public issue — see [SECURITY.m
 
 | Channel | Use it for |
 | --- | --- |
-| [Discord](https://discord.gg/EKYJAjqGhf) | Real-time help, discussion, and community support |
+| [Discord](https://discord.gg/aCGxmRHEJP) | Real-time help, discussion, and community support |
 | [Documentation](https://haxtheweb.org/documentation) | Guides, tutorials, and developer resources |
 | [hax.cloud playground](https://hax.cloud/magicscript.html) | Try HAX components and HAXcms live in the browser |
 | [LinkedIn](http://linkedin.com/company/haxtheweb) | Professional updates and networking |
@@ -110,8 +116,13 @@ issues/
 ├── weekly-post.sh            # Fetch + post automation wrapper
 ├── issues_data/              # Local issue cache (gitignored)
 ├── SUPPORT.md                # Getting help
-├── CODE_OF_CONDUCT.md        # Community standards
+├── CODE_OF_CONDUCT.md        # Community standards (Contributor Covenant 2.1)
 ├── SECURITY.md               # Vulnerability reporting
+├── GOVERNANCE.md             # Ecosystem governance model (source of truth)
+├── SUSTAINABILITY.md         # Funding model, support boundaries, infrastructure inventory
+├── TRADEMARK.md              # Name and logo usage policy
+├── INCIDENT_RESPONSE.md      # Incident severity, response flow, post-incident review
+├── ROADMAP.md                # Ecosystem roadmap
 ├── AGENTS.md                 # Guidance for AI coding agents
 └── LICENSE                   # Apache 2.0
 ```
@@ -121,6 +132,7 @@ issues/
 ## Maintainers & license
 
 - **Primary maintainer**: Bryan Ollendyke ([@btopro](https://github.com/btopro)), Penn State University
+- **Backup owner**: Bill Rose ([@WilliamMRose](https://github.com/WilliamMRose)) — see [GOVERNANCE.md](/GOVERNANCE.md)
 - **License**: [Apache 2.0](/LICENSE)
 - **Copyright**: © 2015–present The Pennsylvania State University
 
