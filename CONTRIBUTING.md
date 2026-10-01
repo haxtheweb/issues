@@ -147,7 +147,7 @@ Before starting work on an issue, comment on it saying you'd like to work on it 
 
 ## Join the community
 
-- **Discord** (real-time help + discussion): https://discord.gg/EKYJAjqGhf
+- **Discord** (real-time help + discussion): https://discord.gg/aCGxmRHEJP
 - **YouTube** (tutorials): https://www.youtube.com/@haxtheweb
 
 ## Next steps
