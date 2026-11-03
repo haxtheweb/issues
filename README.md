@@ -140,4 +140,4 @@ issues/
 
 - [HAXTheWeb.org](https://haxtheweb.org/) — project home and documentation
 - [hax.cloud](https://hax.cloud/) — CDN and live playground
-- [Discord](https://discord.gg/EKYJAqGhf) — join the community
+- [Discord](https://discord.gg/aCGxmRHEJP) — join the community
