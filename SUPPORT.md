@@ -33,6 +33,10 @@ This repository serves as the unified issue queue for all HAXTheWeb projects inc
 - create
 - haxcms-php
 - haxcms-nodejs
+- haxcms-mcp
+- praw
 - And other HAXTheWeb ecosystem projects
 
-Please clearly identify which project your issue relates to in your issue title and description.
+Pick the project from the **Project** dropdown on the bug report or feature request form; it routes and labels your issue. Use "Other" and name the project in the description if it isn't listed.
+
+For security vulnerabilities, do not open a public issue. Submit a private advisory instead: https://github.com/haxtheweb/issues/security/advisories/new

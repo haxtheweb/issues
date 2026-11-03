@@ -12,7 +12,7 @@ body:
 
         **Need help or want to discuss ideas?** Connect with us:
         - [Discord](https://discord.gg/aCGxmRHEJP) for community support
-        - [LinkedIn](http://linkedin.com/company/haxtheweb) for updates
+        - [LinkedIn](https://linkedin.com/company/haxtheweb) for updates
         - [X](https://x.com/haxtheweb) for updates
 
   - type: dropdown
@@ -29,6 +29,7 @@ body:
         - haxcms-php (backend)
         - haxcms-nodejs (backend)
         - haxcms-mcp (MCP server for AI agents)
+        - praw (rules, skills, plugins)
         - Other (integrations, etc)
     validations:
       required: true

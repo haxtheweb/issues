@@ -36,6 +36,8 @@ This queue tracks issues for projects across the ecosystem, including:
 - **webcomponents** — 250+ LitElement web components, themes, and the DDD design system
 - **create** — the `hax` CLI for scaffolding components and HAXsites
 - **haxcms-php** / **haxcms-nodejs** — HAXcms backends (content management + APIs)
+- **haxcms-mcp** — MCP server that lets AI agents operate a HAXcms instance
+- **praw** — HAX ecosystem rules, agent skills, and the Claude Code plugin marketplace
 - **desktop** — Electron-based local development environment
 - **open-apis** — microservice APIs and shared infrastructure
 - **docs** — official documentation site
@@ -65,7 +67,7 @@ For **security vulnerabilities**, do not open a public issue — see [SECURITY.m
 | [Discord](https://discord.gg/aCGxmRHEJP) | Real-time help, discussion, and community support |
 | [Documentation](https://haxtheweb.org/documentation) | Guides, tutorials, and developer resources |
 | [hax.cloud playground](https://hax.cloud/magicscript.html) | Try HAX components and HAXcms live in the browser |
-| [LinkedIn](http://linkedin.com/company/haxtheweb) | Professional updates and networking |
+| [LinkedIn](https://linkedin.com/company/haxtheweb) | Professional updates and networking |
 | [X (@haxtheweb)](https://x.com/haxtheweb) | Project updates |
 
 See [SUPPORT.md](/SUPPORT.md) for more on getting help, and [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) for our community standards.
