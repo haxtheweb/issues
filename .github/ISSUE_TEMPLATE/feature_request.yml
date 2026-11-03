@@ -28,6 +28,7 @@ body:
         - HAXCMS site builder
         - haxcms-php (backend)
         - haxcms-nodejs (backend)
+        - haxcms-mcp (MCP server for AI agents)
         - Other (integrations, etc)
     validations:
       required: true
