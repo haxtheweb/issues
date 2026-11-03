@@ -3,8 +3,11 @@ contact_links:
   - name: 💬 Discord Community
     url: https://discord.gg/aCGxmRHEJP
     about: Join our Discord for questions, discussions, and community support
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/haxtheweb/issues/security/advisories/new
+    about: Report vulnerabilities privately, never in a public issue
   - name: 👔 LinkedIn
-    url: http://linkedin.com/company/haxtheweb
+    url: https://linkedin.com/company/haxtheweb
     about: Connect with us on LinkedIn for professional updates and networking
   - name: 📚 Documentation
     url: https://haxtheweb.org/documentation
