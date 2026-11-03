@@ -37,7 +37,7 @@ Include as much of the following as possible:
 
 If you need to discuss a potential issue with the core team before filing an advisory, contact us via:
 
-- Discord: https://discord.gg/qGBZMBnHc
+- Discord: https://discord.gg/aCGxmRHEJP
 - Email: hax@psu.edu
 
 ## Response expectations
