@@ -1,0 +1,57 @@
+name: weekly-report
+
+# Weekly ecosystem report (haxtheweb/issues#3262). Plain scripting, no AI,
+# flag-only: scripts/weekly-report.mjs reads public data from the HAX repos
+# and posts one comment on haxtheweb/issues#3262 with
+# - open issues here with no activity for 90+ days,
+# - open PRs in webcomponents, haxcms-nodejs, haxcms-php, create, praw and
+#   haxcms-mcp with merge conflicts, failing checks or no activity for 14+
+#   days,
+# - branches left over after their PR was merged or closed,
+# - scheduled workflows whose latest run in the past week failed.
+# It never closes, labels, edits or deletes anything. Only GITHUB_TOKEN is
+# used (those repos are public, so it can read them).
+#
+# Judgment calls (likely duplicates, "probably fixed by", agent drift) are
+# left to people, optionally with an AI assistant, outside CI.
+on:
+  schedule:
+    - cron: "53 2 * * 1" # Sunday 9:53 PM America/New_York (EST); 10:53 PM during EDT
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only write the report to the job summary; post no comment"
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: weekly-report
+  cancel-in-progress: false
+jobs:
+  report:
+    name: Weekly report
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      issues: write # the one comment on haxtheweb/issues#3262
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+      - name: Build and post the report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            node scripts/weekly-report.mjs --dry-run
+          else
+            node scripts/weekly-report.mjs
+          fi
