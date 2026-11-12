@@ -133,7 +133,7 @@ Before starting any work, check the unified issue queue:
 - **Modern JavaScript**: Leverage ES2018+ features while maintaining browser compatibility
 
 ### Design System Integration
-- **DDD System**: All components MUST adhere to the DDD (Design, Develop, Destroy) design system
+- **DDD System**: All components MUST adhere to the DDD (Design, Develop, Deliver) design system
   - Location: `elements/d-d-d` in the webcomponents repository
   - Use DDD for fonts, colors, padding, spacing, margins, and other design tokens
   - Inherit from `DDDSuper` class for automatic DDD integration
