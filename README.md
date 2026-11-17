@@ -116,6 +116,7 @@ issues/
 ├── post-to-linkedin.js       # LinkedIn productivity post generator
 ├── setup-linkedin.js         # LinkedIn OAuth setup (one-time)
 ├── weekly-post.sh            # Fetch + post automation wrapper
+├── reports/                  # Dated issue pace + sourcing reports
 ├── issues_data/              # Local issue cache (gitignored)
 ├── SUPPORT.md                # Getting help
 ├── CODE_OF_CONDUCT.md        # Community standards (Contributor Covenant 2.1)

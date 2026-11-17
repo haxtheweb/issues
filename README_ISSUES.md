@@ -4,10 +4,11 @@ This repository contains tools for managing and searching through all GitHub iss
 
 ## Quick Stats
 
-- **Total Issues**: 2,418 (as of last fetch)
-- **Open Issues**: 226
-- **Closed Issues**: 2,192
-- **Issue Range**: #1 to #2422
+- **Total Issues**: 3,348 (as of 2026-11-17)
+- **Open Issues**: 141
+- **Closed Issues**: 3,207
+- **Issue Range**: #1 to #3361
+- **Pace (closed vs opened)**: last 7 days 100 closed / 83 opened; last 30 days 220 closed / 201 opened; 2026 YTD 904 closed / 833 opened. See [reports/2026-11-17-issue-pace.md](reports/2026-11-17-issue-pace.md) for the all-time monthly trend, label breakdowns, and issue-level sourcing.
 
 ## Tools Available
 
@@ -121,23 +122,23 @@ Run the fetch script periodically to update your local cache:
 
 ## Performance Notes
 
-- Initial fetch takes ~30 seconds for 2400+ issues
+- Initial fetch takes ~30-60 seconds for 3,300+ issues
 - Local searches are nearly instantaneous
 - All issue text is included for full-text search capabilities
 - Data is stored efficiently as JSON for fast processing with `jq`
 
 ## Top Contributors
 
-1. **btopro** - 2,017 issues (83.4%)
+1. **btopro** - 2,829 issues (84.4%)
 2. **nikkimk** - 75 issues
-3. **Peter12G** - 45 issues
-4. **rickhumphries** - 37 issues
-5. **WilliamMRose** - 24 issues
+3. **Peter12G** - 58 issues
+4. **WilliamMRose** - 42 issues
+5. **rickhumphries** - 37 issues
 
 ## Most Common Labels
 
-1. **bug** - 438 issues
-2. **enhancement** - 388 issues
-3. **HAXcms** - 326 issues
-4. **HAX editor** - 322 issues
-5. **UX** - 296 issues
+1. **HAX Lab ♎+🃏+🔥 > 💸** - 272 issues
+2. **Features/Enhancements** - 237 issues
+3. **API / Backend** - 201 issues
+4. **UI / UX / Design System** - 178 issues
+5. **HAX Core** - 173 issues
