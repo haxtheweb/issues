@@ -1,0 +1,51 @@
+---
+# Opened prefilled by the goggles in HAXcms (haxcms-goggles).
+# The goggles fill fields by id through the link, so keep these ids stable:
+# description, element, context, markup, replay, check.
+# The title starts with the element tag in backticks so a title search finds
+# every report about that element.
+name: "🥽 Goggles: hard to use or see"
+description: "Filed from the goggles' Flag lens: something hard to use or see. HAX should prevent these, so it points at a gap in HAX itself or in authored content."
+labels: ["goggles", "a11y"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Already reported?** Search open issues for the element's tag and add a 👍 there instead of filing a duplicate.
+  - type: textarea
+    id: description
+    attributes:
+      label: "What got in the way"
+      description: "What got in the way? Any language is fine."
+    validations:
+      required: true
+  - type: input
+    id: check
+    attributes:
+      label: Failing check
+      description: The check the goggles ran that failed (filled in by the goggles)
+  - type: textarea
+    id: element
+    attributes:
+      label: Element
+      description: Tag, source file and the pointer to the exact element (filled in by the goggles)
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Page, theme, build, language, viewport, browser and console errors (filled in by the goggles)
+  - type: textarea
+    id: markup
+    attributes:
+      label: Markup
+      description: The block's HTML, with the site's own files swapped for placeholders
+  - type: textarea
+    id: replay
+    attributes:
+      label: Replay
+      description: A packed replay bundle so the problem can be opened on a scratch site. If the goggles said it was too big for the link, drag the downloaded replay file in here.
+  - type: markdown
+    attributes:
+      value: |
+        ### Want to fix this yourself?
+        Start with the HAX contributor onboarding at [lab.hax.cloud](https://lab.hax.cloud), then say so in a comment here.
