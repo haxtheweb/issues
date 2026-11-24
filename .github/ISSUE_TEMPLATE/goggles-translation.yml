@@ -1,0 +1,32 @@
+---
+# Opened prefilled by the goggles in HAXcms (haxcms-goggles).
+# The goggles fill fields by id through the link, so keep these ids stable:
+# description, locale. The Translate lens
+# puts its whole report, hax-i18n block included, in description.
+# The title starts with the element tag in backticks so a title search finds
+# every report about that element.
+name: "🥽 Goggles: wrong or missing text"
+description: "Filed from the goggles' Translate lens: suggested translations for one language."
+labels: ["goggles", "i18n"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Already reported?** Search open translation issues for this language and add a 👍 there instead of filing a duplicate.
+  - type: textarea
+    id: description
+    attributes:
+      label: "Suggestions"
+      description: "Filled in by the Translate lens. Leave the hax-i18n block as it is: the translation ingest reads it."
+    validations:
+      required: true
+  - type: input
+    id: locale
+    attributes:
+      label: Language
+      description: The language the site was showing (filled in by the goggles)
+  - type: markdown
+    attributes:
+      value: |
+        ### Want to fix this yourself?
+        Start with the HAX contributor onboarding at [lab.hax.cloud](https://lab.hax.cloud), then say so in a comment here.
