@@ -1,0 +1,33 @@
+---
+# Opened prefilled by the Update lens on learn.hax.cloud (haxtheweb/learn
+# custom/src/learn-update-lens.js). The lens fills fields by id through the
+# link, so keep these ids stable: description, spots.
+# The title starts with "[learn] Tutorial needs updating:" and the tutorial
+# titles, so a title search finds every report about a tutorial.
+name: "🥽 Goggles: this tutorial needs updating"
+description: "Filed from the Update lens on Learn HAX: parts of a tutorial that no longer match HAX."
+title: "[learn] Tutorial needs updating: "
+labels: ["goggles", "Documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Already reported?** Search open issues for the tutorial's title and add a 👍 there instead of filing a duplicate.
+  - type: textarea
+    id: description
+    attributes:
+      label: "What no longer matches"
+      description: "Each part of the tutorial that is out of date, what is wrong, and what it should say if you know. Any language is fine."
+    validations:
+      required: true
+  - type: textarea
+    id: spots
+    attributes:
+      label: "Where (learn-edit/1)"
+      description: "The page, the block's location in the site and an excerpt of each part (filled in by the lens). An agent can take this block as-is."
+      render: json
+  - type: markdown
+    attributes:
+      value: |
+        ### Want to fix this yourself?
+        Tutorials live in [haxtheweb/learn](https://github.com/haxtheweb/learn). Start with the HAX contributor onboarding at [lab.hax.cloud](https://lab.hax.cloud), then say so in a comment here.
